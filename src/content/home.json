@@ -1,0 +1,191 @@
+{
+  "project": {
+    "name": "Home – Curso de Empreendedorismo",
+    "goal": "Informar, gerar confiança e converter visitantes em alunos",
+    "inspiration_sources": {
+      "typography_from_1": "Título gigante, peso muito alto, tracking apertado",
+      "details_from_2": "pills arredondadas, linhas conectivas, glow roxo suave",
+      "structure_from_3": "navbar com CTAs, hero com gradiente, seções claras"
+    },
+    "tech_stack_sugestao": ["Vite", "React", "TailwindCSS", "Framer Motion", "GA4"]
+  },
+  "brand": {
+    "logo": { "type": "wordmark", "case": "UPPERCASE", "weight": 900 },
+    "typography": {
+      "display": { "name": "Space Grotesk", "tracking": -0.01, "line_height": 0.95 },
+      "body": { "name": "Inter", "line_height": 1.6 }
+    },
+    "colors": {
+      "mode": "dark_default_light_alt",
+      "dark": {
+        "bg": "#0B0F1E",
+        "bg_alt": "#131936",
+        "text": "#FFFFFF",
+        "muted": "#B9C1D9",
+        "accent": "#7C6CF2",
+        "accent_glow": "#BDA7FF",
+        "card": "#151B3F",
+        "border": "#232A55",
+        "success": "#2BD67B",
+        "warning": "#F2B36C",
+        "error": "#F46A6A"
+      },
+      "light": {
+        "bg": "#FFFFFF",
+        "bg_alt": "#F7F7FB",
+        "text": "#1A1A1A",
+        "muted": "#60656F",
+        "accent": "#7C6CF2",
+        "accent_glow": "#BDA7FF",
+        "card": "#FFFFFF",
+        "border": "#E6E8F2"
+      },
+      "gradients": {
+        "hero": ["#0B0F1E", "#13204B", "#271C56"],
+        "cta": ["#7C6CF2", "#9E8CFF"]
+      }
+    },
+    "decorative_details": {
+      "pills": true,
+      "soft_shadow": "0 10px 30px rgba(124,108,242,0.25)",
+      "neural_lines": { "enabled": true, "stroke": "rgba(124,108,242,0.25)", "thickness": 1.2, "nodes_style": "capsules" }
+    }
+  },
+  "layout": {
+    "container_max": 1280,
+    "grid": 12,
+    "gutter": 24,
+    "radius": 16,
+    "breakpoints": { "xs": 360, "sm": 640, "md": 768, "lg": 1024, "xl": 1280, "xxl": 1536 }
+  },
+  "header": {
+    "sticky": true,
+    "elevation_on_scroll": true,
+    "logo": { "text": "VENTURA ACADEMY", "font": "display", "size_rem": 1.3 },
+    "nav": [
+      {"label":"Programa","href":"#programa"},
+      {"label":"Depoimentos","href":"#depoimentos"},
+      {"label":"Planos","href":"#planos"},
+      {"label":"FAQ","href":"#faq"},
+      {"label":"Blog","href":"/blog"}
+    ],
+    "right_actions": {
+      "search": true,
+      "cta_primary": {"label":"Matricule-se","href":"#planos","variant":"pill_accent"},
+      "cta_secondary": {"label":"Aula grátis","href":"#lead","variant":"ghost"}
+    },
+    "mobile": { "menu": "full_screen_blur_backdrop", "items_large_tap": true }
+  },
+  "hero": {
+    "type": "dark_gradient",
+    "height_viewport": 0.9,
+    "title": { "text": "EMPREENDA COM MÉTODO", "weight": 900 },
+    "subtitle": "Do zero à primeira venda em 4 semanas. Método, comunidade e mentoria para tirar sua ideia do papel e escalar com previsibilidade.",
+    "media": { "side": "right", "kind": "image_or_video", "ratio": "4:3", "style": "recorte ousado + glow roxo" },
+    "ctas": [
+      {"label":"Começar agora","href":"#planos","variant":"pill_accent","icon":"bolt"},
+      {"label":"Assistir aula gratuita","href":"#lead","variant":"pill_ghost","icon":"play"}
+    ],
+    "trust_bar": { "enabled": true, "logos": ["Sebrae","Coca-Cola","Honda","Governo DF","AIBC Awards"], "style":"monochrome_muted" },
+    "micro_interactions": { "title_kerning_hover": true, "parallax_media": true, "accent_glow_pulse": true }
+  },
+  "sections": [
+    { "id":"beneficios","title":"Por que este curso?","style":"cards_3_up",
+      "cards":[
+        {"icon":"target","title":"Plano passo a passo","text":"Roteiro semanal validado em centenas de negócios.","detail_line":"pill roxa"},
+        {"icon":"trending-up","title":"Vendas previsíveis","text":"Funil simples para primeira e próximas vendas.","detail_line":"linha conectiva"},
+        {"icon":"calculator","title":"Domine seus números","text":"P&L, CAC e LTV sem planilhas assustadoras.","detail_line":"node capsule com glow"}
+      ]
+    },
+    { "id":"como-funciona","title":"Como funciona","style":"steps_3_with_lines",
+      "steps":[
+        {"name":"Fundação","desc":"Oferta, persona e proposta de valor","badge":"Semana 1"},
+        {"name":"Validação","desc":"MVP, entrevistas e pré-vendas","badge":"Semanas 2–3"},
+        {"name":"Tração","desc":"Aquisição, copy e retenção","badge":"Semana 4+"}
+      ],
+      "illustration":"rede de linhas roxas e nós"
+    },
+    { "id":"programa","title":"O que você vai aprender","style":"accordion_with_metrics",
+      "modules":[
+        {"name":"Proposta de Valor","outcome":"Mensagem que vende em 7s"},
+        {"name":"Pesquisa & Validação","outcome":"Backlog real de dores"},
+        {"name":"Oferta & Precificação","outcome":"Preço com margem e ROI"},
+        {"name":"Aquisição (2 canais)","outcome":"Metas semanais claras"},
+        {"name":"Vendas","outcome":"Roteiro e páginas que convertem"},
+        {"name":"Operação & Finanças","outcome":"P&L simples e rituais"}
+      ],
+      "sidebar": { "metrics":[
+          {"label":"Horas de conteúdo","value":"40h"},
+          {"label":"Mentorias ao vivo","value":"Quinzenais"},
+          {"label":"Acesso","value":"12 meses"}],
+        "download_syllabus": true
+      }
+    },
+    { "id":"cases","title":"Casos reais","style":"carousel_cards",
+      "cards":[
+        {"before":"MRR R$8k","after":"R$28k em 90 dias","niche":"SaaS B2B"},
+        {"before":"0 vendas","after":"1ª venda em 21 dias","niche":"Infoproduto"},
+        {"before":"CAC alto","after":"-32% CAC","niche":"Serviços"}
+      ],
+      "video_testimonials": true
+    },
+    { "id":"oferta","title":"O que está incluso","style":"incluso_bonuses",
+      "includes":[
+        "Acesso 12 meses","Atualizações","Comunidade privada",
+        "Mentorias em grupo quinzenais","Templates e checklists"
+      ],
+      "bonuses":[
+        {"name":"Scripts de validação","value_anchor":"R$497"},
+        {"name":"Planilha P&L automatizada","value_anchor":"R$297"},
+        {"name":"Kit de anúncios","value_anchor":"R$397"}
+      ],
+      "guarantee":"7 dias — satisfação ou 100% do dinheiro de volta"
+    },
+    { "id":"planos","title":"Planos e preços","style":"pricing_3_tiers",
+      "tiers":[
+        {"name":"Essencial","price":"R$ XXX","features":["Aulas on-demand","Comunidade"],"cta":"Matricular","recommended":false},
+        {"name":"Mentoria","price":"R$ XXX","features":["Tudo do Essencial","Mentorias em grupo","Revisões de oferta"],"cta":"Matricular","recommended":true},
+        {"name":"Pro","price":"R$ XXX","features":["Tudo do Mentoria","1:1 limitado","Suporte prioritário"],"cta":"Aplicar","recommended":false}
+      ],
+      "notes":"Parcelamento, nota fiscal e políticas de reembolso visíveis"
+    },
+    { "id":"instrutor","title":"Sobre o instrutor","style":"split_left_text_right_photo",
+      "bio_short":"Tony Ventura — palestrante e especialista em IA e novas tecnologias. Já treinou milhares de alunos e empresas.",
+      "proof":["AIBC Awards","Sebrae","Coca-Cola","Honda"],
+      "cta":{"label":"Ver credenciais","href":"/sobre"}
+    },
+    { "id":"depoimentos","title":"O que os alunos dizem","style":"video_grid_2x2",
+      "items":[
+        {"name":"Ana","role":"E-commerce","quote":"Fiz minha 1ª venda em 2 semanas."},
+        {"name":"Carlos","role":"SaaS","quote":"Clareza no funil e previsibilidade."}
+      ]
+    },
+    { "id":"faq","title":"Perguntas frequentes","style":"accordion",
+      "items":[
+        {"q":"Quanto tempo terei acesso?","a":"12 meses"},
+        {"q":"Há certificado?","a":"Sim, após conclusão"},
+        {"q":"Aulas ao vivo?","a":"Mentorias quinzenais + on-demand"},
+        {"q":"Serve para serviços e produtos?","a":"Sim, método transversal"}
+      ]
+    },
+    { "id":"cta-final","title":"Pronto para empreender com método?",
+      "subtitle":"Inscreva-se agora. Leva menos de 2 minutos.",
+      "ctas":[
+        {"label":"Garantir minha vaga","href":"#planos","variant":"pill_accent"},
+        {"label":"Falar com consultor","href":"https://wa.me/559999999","variant":"ghost"}
+      ]
+    },
+    { "id":"lead","title":"Aula gratuita","style":"email_capture_horizontal",
+      "fields":["email","nome"],"privacy_note":"Sem spam. Você pode sair quando quiser."
+    }
+  ],
+  "footer": {
+    "columns": {
+      "Produto": ["Programa","Planos","FAQ"],
+      "Empresa": ["Sobre","Contato","Imprensa"],
+      "Legal": ["Termos","Privacidade","Reembolsos"]
+    },
+    "social": ["YouTube","Instagram","LinkedIn"],
+    "compliance": ["Selos de pagamento","CNPJ","Endereço"]
+  }
+}
